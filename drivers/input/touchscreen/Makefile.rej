@@ -1,7 +1,0 @@
---- drivers/input/touchscreen/Makefile	2022-07-17 22:30:22.000000000 +0200
-+++ drivers/input/touchscreen/Makefile	2022-07-24 14:52:35.333562704 +0200
-@@ -116,3 +116,4 @@
- obj-$(CONFIG_TOUCHSCREEN_RASPBERRYPI_FW)	+= raspberrypi-ts.o
- obj-$(CONFIG_TOUCHSCREEN_IQS5XX)	+= iqs5xx.o
- obj-$(CONFIG_TOUCHSCREEN_ZINITIX)	+= zinitix.o
-+obj-$(CONFIG_TOUCHSCREEN_NT36672A)      += NT36672A/
