@@ -117,6 +117,9 @@ static int j20s_36_02_0a_dsc_on(struct j20s_36_02_0a_dsc *ctx)
 	ret = mipi_dsi_dcs_set_pixel_format(dsi, 0xef);
 	if (ret < 0) {
 		dev_err(dev, "Failed to set pixel format: %d\n", ret);
+		} else 
+	{
+		dev_err(dev, "set pixel format: %d\n", ret);
 		return ret;
 	}
 
@@ -355,10 +358,10 @@ static int j20s_36_02_0a_dsc_probe(struct mipi_dsi_device *dsi)
 
 	dsc->slice_height = 20;
 	dsc->slice_width = 540;
-	dsc->slice_count = 1; // TODO: fix this value
+	dsc->slice_count = 2; 
 	dsc->bits_per_component = 8;
 	dsc->bits_per_pixel = 8;
-	dsc->block_pred_enable = false;
+	dsc->block_pred_enable = true;
 
 	ctx->panel.dsc = dsc;
 
