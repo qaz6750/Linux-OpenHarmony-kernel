@@ -14,8 +14,6 @@ if INPUT_TOUCHSCREEN
 
 source "drivers/input/touchscreen/nt36523/Kconfig"
 
-source "drivers/input/touchscreen/nt36672a/Kconfig"
-
 config TOUCHSCREEN_88PM860X
 	tristate "Marvell 88PM860x touchscreen"
 	depends on MFD_88PM860X
