@@ -469,7 +469,7 @@
 	
 	zap-shader {
 		memory-region = <&gpu_mem>;
-		firmware-name = "qcom/a640_zap.mdt";
+		firmware-name = "qcom/a640_zap.mbn";
 	};
 };
 
@@ -519,17 +519,17 @@
 
 &remoteproc_adsp {
 	status = "okay";
-	firmware-name = "qcom/sm8150/vayu/adsp.mdt";
+	firmware-name = "qcom/sm8150/vayu/adsp.mbn";
 };
 
 &remoteproc_cdsp {
 	status = "okay";
-	firmware-name = "qcom/sm8150/vayu/cdsp.mdt";
+	firmware-name = "qcom/sm8150/vayu/cdsp.mbn";
 };
 
 &remoteproc_mpss {
 	status = "okay";
-	firmware-name = "qcom/sm8150/vayu/modem.mdt";
+	firmware-name = "qcom/sm8150/vayu/modem.mbn";
 };
 
 &tlmm {
