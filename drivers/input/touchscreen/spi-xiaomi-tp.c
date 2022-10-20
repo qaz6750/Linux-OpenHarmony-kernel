@@ -149,11 +149,10 @@ static int32_t ts_spi_probe(struct spi_device *client)
 	return 0;
 }
 
-static int32_t ts_spi_remove(struct spi_device *client)
+static void ts_spi_remove(struct spi_device *client)
 {
 	PDEBUG("touch_xsfer will be remove, touch must stop spi xsfer\n");
 	sysfs_remove_file(&client->dev.kobj, &dev_attr_ts_xsfer_state.attr);
-	return 0;
 }
 
 static struct of_device_id ts_match_tbl[] = {
