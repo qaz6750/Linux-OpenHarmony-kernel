@@ -39,6 +39,7 @@
 	aliases {
 		serial0 = &uart2;
 		hsuart0 = &uart13;
+		display0 = &framebuffer;
 	};
 
 	chosen {
@@ -60,7 +61,7 @@
 			clocks = <&gcc GCC_DISP_HF_AXI_CLK>,
 			    	 <&gcc GCC_DISP_SF_AXI_CLK>;
 		};
-	}
+	};
 	
 
 	reserved-memory {
