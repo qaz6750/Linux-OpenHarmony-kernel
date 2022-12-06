@@ -493,7 +493,7 @@
 };
 
 &gpi_dma2 {
-	staus = "okay";
+	status = "okay";
 };
 
 &pon_pwrkey {
