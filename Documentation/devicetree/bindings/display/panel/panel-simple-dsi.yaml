@@ -57,6 +57,8 @@ properties:
       - samsung,sofef00
         # Shangai Top Display Optoelectronics 7" TL070WSH30 1024x600 TFT LCD panel
       - tdo,tl070wsh30
+        # Samsung ea8076 1080x2340 FullHD AMOLED panel
+      - samsung,fhd-ea8076
 
   reg:
     maxItems: 1
